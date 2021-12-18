@@ -4,8 +4,12 @@
     right: 1rem;
 }
 
+#page-content {
+    padding-left: 2rem;
+}
+
 .padding {
-    padding: 1rem !important
+    padding: 1rem !important;
 }
 
 .user-card-full {
