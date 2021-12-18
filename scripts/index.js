@@ -4,19 +4,40 @@ var uiConfig = {
     callbacks: {
       signInSuccessWithAuthResult: function(authResult, redirectUrl) {
         // User successfully signed in.
-        // Return type determines whether we continue the redirect automatically
-        // or whether we leave that to developer to handle.
-        return true;
+        var user = authResult.user;
+        if (authResult.additionalUserInfo.isNewUser) {
+          db.collection("users").doc(user.uid).set({
+            name: user.displayName,
+            email: user.email,
+            id: user.uid,
+            city: "need to set",
+            postcode: "need to set",
+            kandy: 0
+          });
+          db.collection("likes").doc(user.uid).set({
+            likeMap: {},
+            count: 0,
+            likeMapKey: 0,
+          })
+          .then(function () {
+            console.log("Complete! new user data setup");
+            window.location.assign("home.html");
+          })
+          .catch(function (error) {
+            console.log("Error creating new user data " + error);
+          });
+        } else {
+          return true;
+        }
+        return false;
       },
       uiShown: function() {
-        // The widget is rendered.
-        // Hide the loader.
         document.getElementById('loader').style.display = 'none';
       }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
-    signInSuccessUrl: 'skeleton.html',
+    signInSuccessUrl: 'home.html',
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
