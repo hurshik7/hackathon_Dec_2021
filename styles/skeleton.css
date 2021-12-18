@@ -1,4 +1,25 @@
-.bottomnavbar{
+.top{
+    /* background-color: green; */
+    width: 100%;
+    height: 10%;
+
+    /*temporary border to be deleted later */
+    /* border-bottom: 1px solid black; */
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10%;
+    background-image: url("/images/adoptoy_logo_no_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottomnavbar {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -12,14 +33,25 @@
     width: 100%;
     height: 100%;
     color: #31393c;
-    font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     background-color: #f7e0c1;
     display: grid;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: 60% 40%;
 }
 
-.bottomicons:hover{
-    background-color: #FDCA40;
+.material-icons {
+    font-size: 24px;
+    color: #31393c;
+    justify-self: center;
+    align-self: end;
+}
+
+.bottomtitle {
+    margin-top: 4px;
+    justify-self: center;
+    align-self: start;
+}
+
+.bottomicons:hover {
+    background-color: #fdca40;
 }
