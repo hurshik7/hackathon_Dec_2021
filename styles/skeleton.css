@@ -1,0 +1,25 @@
+.bottomnavbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.bottomicons {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #31393c;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #f7e0c1;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.bottomicons:hover{
+    background-color: #FDCA40;
+}
