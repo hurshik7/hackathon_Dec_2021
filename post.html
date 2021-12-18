@@ -31,29 +31,9 @@
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Bootstrap FirebaseUI CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
-
-    <!-- Firebase 8 CDNs-->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-
-    <!-- Link to the api keys for your firebase project -->
-    <script src="./scripts/firebaseAPI.js"></script>
-
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/skeleton.css" />
-    <link rel="stylesheet" href="./styles/profile.css" />
 
 
 </head>
@@ -67,15 +47,34 @@
     </div>
 
     <div class="main">
-<<<<<<< HEAD
-        
-
-=======
         <!-- contents here -->
->>>>>>> d00058950455c40d16b243170b4bd4025867514f
-    </div>
+        <div class="postPicture">
+            <input type="file" name="pictures" id="pictures" accept="image/*">
+        </div>
+        <div class="postSubject">
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+        </div>
+        <div class="ageOption">
+            <select id="ageRange" name="ageRange">
+                <option value="under12">0 - 12 month</option>
+                <option value="under24">12 - 24 month</option>
+                <option value="under36">24 - 36 month</option>
+                <option value="under48">36 - 48 month</option>
+                <option value="over48">48 month +</option>
+            </select>
+        </div>
+        <div class="usedOption">
+            <select id="newOrUsed" name="newOrUsed">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+            </select>
+        </div>
+        <div class="postDescription">
+            <textarea id="description" name="description" rows="8" cols="40" placeholder="Share your toys!"></textarea>
+        </div>
 
-    
+
+    </div>
     <div class="bottomnavbar">
         <a href="/home.html" class="bottomicons">
             <span class="material-icons"> home </span>
