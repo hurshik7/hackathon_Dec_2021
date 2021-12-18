@@ -48,6 +48,32 @@
 
     <div class="main">
         <!-- contents here -->
+        <div class="postPicture">
+            <input type="file" name="pictures" id="pictures" accept="image/*">
+        </div>
+        <div class="postSubject">
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+        </div>
+        <div class="ageOption">
+            <select id="ageRange" name="ageRange">
+                <option value="under12">0 - 12 month</option>
+                <option value="under24">12 - 24 month</option>
+                <option value="under36">24 - 36 month</option>
+                <option value="under48">36 - 48 month</option>
+                <option value="over48">48 month +</option>
+            </select>
+        </div>
+        <div class="usedOption">
+            <select id="newOrUsed" name="newOrUsed">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+            </select>
+        </div>
+        <div class="postDescription">
+            <textarea id="description" name="description" rows="8" cols="40" placeholder="Share your toys!"></textarea>
+        </div>
+
+
     </div>
     <div class="bottomnavbar">
         <a href="/home.html" class="bottomicons">

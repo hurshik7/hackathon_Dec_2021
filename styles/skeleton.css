@@ -4,7 +4,7 @@
     height: 10%;
 
     /*temporary border to be deleted later */
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
 }
 
 .logo {
@@ -17,6 +17,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.postIcon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 52px;
+    padding: 10px;
+    color: #31393c;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.postIcon:hover {
+    background-color: #feeed3;
 }
 
 .bottomnavbar {
