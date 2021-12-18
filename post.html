@@ -34,6 +34,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/skeleton.css" />
+    <link rel="stylesheet" href="./styles/post.css">
 
 
 </head>
@@ -49,7 +50,13 @@
     <div class="main">
         <!-- contents here -->
         <div class="postPicture">
-            <input type="file" name="pictures" id="pictures" accept="image/*">
+            <input type="file" name="pictures" id="pictures" accept="image/*" multiple>
+            <label for="pictures"><span class="material-icons" style="color: #6c6c6c;">
+                photo_camera
+                </span>
+                <span class="innerLabel">Select Pictures</span>
+                </label>
+                <span id="file-chosen">No file chosen</span>
         </div>
         <div class="postSubject">
             <input type="text" name="subject" id="subject" placeholder="Subject">
@@ -70,7 +77,14 @@
             </select>
         </div>
         <div class="postDescription">
-            <textarea id="description" name="description" rows="8" cols="40" placeholder="Share your toys!"></textarea>
+            <textarea id="description" name="description" rows="10" cols="50" placeholder="Share your toys!"></textarea>
+        </div>
+        <div class="postHashtag" id="hashtagsection">
+            <button id="addhashtag" type="button">Add Hashtag</button>
+            <!-- <input type="text" name="hashtag" id="hashtag" class="hashtags" placeholder="#tag"> -->
+        </div>
+        <div class="submitbutton">
+            <button id="postsubmit" type="submit">Submit</button>
         </div>
 
 
@@ -93,6 +107,8 @@
             <span class="bottomtitle">Profile</span>
         </a>
     </div>
+
+    <script src="./scripts/post.js"></script>
 </body>
 
 </html>
