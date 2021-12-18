@@ -55,3 +55,11 @@
 .bottomicons:hover {
     background-color: #fdca40;
 }
+
+.main {
+    width: 100vw;
+    height: 120vh;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+}
