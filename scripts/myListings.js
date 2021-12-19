@@ -1,5 +1,11 @@
 let userID, imgURL, subject, ageRange, type, description, timeStamp;
 
+function passDataToDetail(cardId) {
+    console.log(cardId);
+    localStorage.setItem('documentId', cardId);
+    window.location.assign("detail.html");
+}
+
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         userID = user.uid;
@@ -29,11 +35,14 @@ firebase.auth().onAuthStateChanged((user) => {
                     let listingImg = document.createElement("img");
                     let subjectLine = document.createElement("span");
                     let time = document.createElement("span");
+                    let cardId = doc.data().docName;
+                    let functionString = `passDataToDetail("${cardId}")`;
                     // let age = document.createElement("span");
                     // let types = document.createElement("span");
 
-                    a.setAttribute("href", "./detail.html");
+                    //a.setAttribute("href", "./detail.html");
                     a.setAttribute("class", "listingcard");
+                    a.setAttribute("onclick", functionString);
 
                     listingImg.setAttribute("src", imgURL);
                     listingImg.setAttribute("class", "listingImg");
