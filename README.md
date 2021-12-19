@@ -1,4 +1,4 @@
-# hackathon_Dec_2021
+# adoptoy
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Contents](#content)
