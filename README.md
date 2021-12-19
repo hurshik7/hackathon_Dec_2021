@@ -2,6 +2,8 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Contents](#content)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
 ## General Info
 "adoptoy" is a platform to give out or exchange used toys for kids.
