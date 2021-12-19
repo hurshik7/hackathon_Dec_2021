@@ -73,7 +73,8 @@ function showData() {
                     for (let i = 0; i < likesList.likeList.length; i++) {
                         if (likesList.likeList[i] == docIdFromLocal) {
                             fillLikeIcon();
-                            console.log("found!");                        }
+                            console.log("found!");                       
+                        }
                     }
                 })
 
