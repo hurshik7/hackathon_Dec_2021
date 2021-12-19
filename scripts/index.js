@@ -15,9 +15,7 @@ var uiConfig = {
             kandy: 0
           });
           db.collection("likes").doc(user.uid).set({
-            likeMap: {},
-            count: 0,
-            likeMapKey: 0,
+            likeMap: [],
           })
           .then(function () {
             console.log("Complete! new user data setup");
