@@ -67,7 +67,7 @@ function showData() {
                     document.getElementsByClassName("user-kandy-count")[0].innerText = user_kandy;
                     document.getElementsByClassName("user-id")[0].innerText = user_name;
                 })
-                var userLikes = db.collection("likes").doc(user_uid);
+                var userLikes = db.collection("likes").doc(user.uid);
                 userLikes.get().then((likes) => {
                     var likesList = likes.data();
                     for (let i = 0; i < likesList.likeList.length; i++) {
