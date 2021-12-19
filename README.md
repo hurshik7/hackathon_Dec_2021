@@ -4,7 +4,8 @@
 * [Contents](#content)
 
 ## General Info
-
+"adoptoy" is a platform to give out or exchange used toys for kids.
+As kids grow, they always need new toys or books based on their age or development status. Those unwanted toys usually sit in the back of the closet with dust, so we thought a lot of kids could take advantage of our app if we make a platform like a marketplace to give out or exchange those toys.
 
 	
 ## Technologies
