@@ -33,7 +33,6 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/skeleton.css" />
-    <link rel="stylesheet" href="./styles/post.css">
 
 
 </head>
@@ -41,48 +40,10 @@
 <body>
     <div class="top">
         <a href="home.html"><div class="logo"></div></a>
-        <a href="/post.html" class="post">
-            <span class="material-icons postIcon"> edit </span>
-        </a>
     </div>
 
     <div class="main">
         <!-- contents here -->
-        <div class="postPicture">
-            <input type="file" name="pictures" id="pictures" accept="image/*" multiple>
-            <label for="pictures"><span class="material-icons" style="color: #6c6c6c;">
-                photo_camera
-                </span>
-                <span class="innerLabel">Select Pictures</span>
-                </label>
-                <span id="file-chosen">No file chosen</span>
-        </div>
-        <div class="postSubject">
-            <input type="text" name="subject" id="subject" placeholder="Subject">
-        </div>
-        <div class="ageOption">
-            <select id="ageRange" name="ageRange">
-                <option value="under12">0 - 12 month</option>
-                <option value="under24">12 - 24 month</option>
-                <option value="under36">24 - 36 month</option>
-                <option value="under48">36 - 48 month</option>
-                <option value="over48">48 month +</option>
-            </select>
-        </div>
-        <div class="usedOption">
-            <select id="newOrUsed" name="newOrUsed">
-                <option value="new">New</option>
-                <option value="used">Used</option>
-            </select>
-        </div>
-        <div class="postDescription">
-            <textarea id="description" name="description" rows="10" cols="50" placeholder="Share your toys!"></textarea>
-        </div>
-        <div class="submitbutton">
-            <button id="postsubmit" type="submit" onclick="submit()">Submit</button>
-        </div>
-
-
     </div>
     <div class="bottomnavbar">
         <a href="/home.html" class="bottomicons">
@@ -102,8 +63,6 @@
             <span class="bottomtitle">Profile</span>
         </a>
     </div>
-
-    <script src="./scripts/post.js"></script>
 </body>
 
 </html>
