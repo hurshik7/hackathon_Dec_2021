@@ -1,6 +1,6 @@
 .main {
     display: grid;
-    grid-template-rows: 20% 5% 5% 5% 35% 20% 10%;
+    grid-template-rows: 25% 5% 5% 5% 35% 20% 5%;
     align-items: center;
 }
 

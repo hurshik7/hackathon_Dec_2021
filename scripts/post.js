@@ -1,16 +1,3 @@
-let hashtag = document.getElementById('addhashtag');
-let hashtagection = document.getElementById('hashtagsection');
-
-hashtag.addEventListener("click",function(){
-    let input = document.createElement("input");
-    input.setAttribute("type","text");
-    input.setAttribute("class", "hastags");
-    input.setAttribute("name","hashtag");
-    input.setAttribute("placeholder", "#tag");
-
-    hashtagection.appendChild(input);
-})
-
 const actualBtn = document.getElementById('pictures');
 const fileChosen = document.getElementById('file-chosen');
 
@@ -29,7 +16,7 @@ actualBtn.addEventListener('change', function(){
 let currentUser;
 let userID, userEmail;
 
-let fileURL, subject, ageRange, type, description;
+let fileURL, subject, ageRange, type, description, timeStamp;
 let docName;
 const myListings = db.collection("posts");
 
@@ -52,16 +39,27 @@ function submit() {
     console.log(type);
     description = document.getElementById("description").value;
     console.log(description);
+    timeStamp = new Date().toString();
+    
+    //"Sat Dec 18 2021 16:35:33 GMT-0800 (Pacific Standard Time)"
+    let timeArr = timeStamp.split(" ");
 
-    /////////////////////////////////////////////////////////
-    //////////////////////docName to be chagned - to include timestamp
-    docName = userID + userEmail + subject;
+    for (let i = 0; i < 5; i++){
+        if (i == 0){
+            timeStamp = timeArr[i];
+        }
+        else {
+            timeStamp += "-" + timeArr[i];
+        }
+    }
+
+    docName = userID + subject + timeStamp;
 
     //get the data that's uploaded in input="file" area
     const ref = firebase.storage().ref();
 
     const file = document.getElementById("pictures").files[0];
-    const name = userID + "/" + subject + "-" + ageRange + "-" + type + "-"
+    const name = userID + "/" + timeStamp + "/" + subject + "-" + ageRange + "-" + type + "-"
         file.name;
     const metadata = {
         contentType: file.type
