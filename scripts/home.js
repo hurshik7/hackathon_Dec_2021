@@ -6,7 +6,6 @@ function passDataToDetail(cardId) {
     window.location.assign("detail.html");
 }
 
-
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         userID = user.uid;
