@@ -27,10 +27,12 @@
     <!-- Link to the api keys for your firebase project -->
     <script src="./scripts/firebaseAPI.js"></script>
 
+
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/detail.css" />
     <link rel="stylesheet" href="./styles/skeleton.css" />
 
 
@@ -38,15 +40,27 @@
 
 <body>
     <div class="top">
-        <div class="logo"></div>
-        <a href="/post.html" class="post">
-            <span class="material-icons postIcon"> edit </span>
-        </a>
+        <a href="home.html"><div class="logo"></div></a>
     </div>
 
     <div class="main">
-        <!-- contents here -->
+        <div class="item-image">image</div>
+        <div class="user-container">
+            <div class="user-photo"></div>
+            <div class="user-id">user-id</div>
+            <div class="user-kandy">🍬 Kandy <span class="user-kandy-count">1</span></div>
+        </div>  
+        <div class="detail-container">
+            <div class="subject">subject</div>
+            <div class="time">time</div>
+            <div class="details">
+                <div class="material-icons md-18 type">label<span class="item-type"> new</span></div>
+                <div class="material-icons md-18 age">face<span class="age-range"> 3-5</span> </div>
+                <div class="description">description</div>
+            </div>
+        </div>
     </div>
+
     <div class="bottomnavbar">
         <a href="/home.html" class="bottomicons">
             <span class="material-icons"> home </span>
@@ -65,6 +79,9 @@
             <span class="bottomtitle">Profile</span>
         </a>
     </div>
+
+    <!-- script files -->
+    <script src="/scripts/detail.js"></script>
 </body>
 
 </html>
