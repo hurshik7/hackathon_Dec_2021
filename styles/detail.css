@@ -45,10 +45,25 @@
     padding-right: 1rem;
     display: grid;
     grid-template-rows: 15% 10% 75%;
+    grid-template-columns: 50% 50%;
+}
+
+.like-btn {
+    padding-right: 1rem;
+    justify-self: end;
+}
+
+.subject {
+    grid-column: 1 / span 1;
+}
+
+.time {
+    grid-column: 1 / -1;
 }
 
 .details {
     display: grid;
+    grid-column: 1 / -1;
     grid-template-rows: 20% 80%;
     grid-template-columns: 50% 50%;
 }
