@@ -1,0 +1,61 @@
+.main {
+    display: grid;
+    grid-template-rows: 50% 10% 40%;
+}
+
+.item-image {
+    background-image: url("https://dummyimage.com/600x400/000/fff");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user-container {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 5% 15% 30% 40% 10%;
+    border-bottom: 1px solid #9db7e3;
+}
+
+.subject {
+    font-weight: bold;
+}
+
+.user-id {
+    grid-column: 3 / span 1;
+}
+
+.user-kandy {
+    justify-self: end;
+}
+
+.user-photo {
+    background-image: url("../images/user_photo_sample.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 55%;
+    grid-column: 2 / span 1;    
+}
+
+.detail-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-rows: 15% 10% 75%;
+}
+
+.details {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+}
+
+.description {
+    border: 1px solid #9db7e3;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    padding: 5px;
+}
