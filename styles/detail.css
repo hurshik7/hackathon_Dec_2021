@@ -51,6 +51,9 @@
 .like-btn {
     padding-right: 1rem;
     justify-self: end;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .subject {
