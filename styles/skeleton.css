@@ -13,12 +13,8 @@ body {
 }
 
 .top{
-    /* background-color: green; */
     width: 100%;
     height: 10%;
-
-    /*temporary border to be deleted later */
-    border-bottom: 1px solid black;
 }
 
 .logo {
