@@ -143,3 +143,27 @@ h6 {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.btn-kellyblue {
+    color: #fff;
+    background-color: #9db7e3;
+    background-color: cutom-color;
+    border-color: #9db7e3;
+    border-color: cutom-cor;
+}
+
+.bg-kellyblue {
+    background-color: #9db7e3 !important;
+}
+
+.btn-kellyred {
+    color: #fff;
+    background-color: #cf7585;
+    background-color: cutom-color;
+    border-color: #cf7585;
+    border-color: cutom-cor;
+}
+
+.bg-kellyred {
+    background-color: #cf7585 !important;
+}
