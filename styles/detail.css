@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 5% 15% 30% 40% 10%;
     border-bottom: 1px solid #9db7e3;
+    align-items: center;
 }
 
 .subject {
@@ -23,10 +24,12 @@
 
 .user-id {
     grid-column: 3 / span 1;
+    font-size: 13px;
 }
 
 .user-kandy {
     justify-self: end;
+    font-size: 13px;
 }
 
 .user-photo {
@@ -35,7 +38,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 55%;
-    height: 55%;
+    height: 75%;
     grid-column: 2 / span 1;    
 }
 
@@ -58,10 +61,14 @@
 
 .subject {
     grid-column: 1 / span 1;
+    padding-left: 5px;
+    font-size: 13px;
 }
 
 .time {
     grid-column: 1 / -1;
+    padding-left: 5px;
+    font-size: 13px;
 }
 
 .details {
@@ -76,4 +83,17 @@
     border-radius: 5px;
     grid-column: 1 / -1;
     padding: 5px;
+    margin: 5px;
+    font-size: 13px;
+}
+
+.item-type, .age-range {
+    padding-left: 3px;
+    font-size: 13px;
+}
+
+.type, .age{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }

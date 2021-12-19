@@ -14,7 +14,7 @@ actualBtn.addEventListener('change', function(){
 })
 
 let currentUser;
-let userID, userEmail;
+let userID, userEmail, userName;
 
 let fileURL, subject, ageRange, type, description, timeStamp;
 let docName;
