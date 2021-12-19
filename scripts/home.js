@@ -30,8 +30,8 @@ firebase.auth().onAuthStateChanged((user) => {
                     timeStamp = doc.data().Time;
                     console.log(timeStamp);
                     //Shik Added
-                    cardId = doc.data().docName;
-                    functionString = `passDataToDetail("${cardId}")`;
+                    let cardId = doc.data().docName;
+                    let functionString = `passDataToDetail("${cardId}")`;
  
                     let a = document.createElement("a");
                     let div = document.createElement("div");
