@@ -44,16 +44,18 @@ function submit() {
     //"Sat Dec 18 2021 16:35:33 GMT-0800 (Pacific Standard Time)"
     let timeArr = timeStamp.split(" ");
 
-    for (let i = 0; i < 5; i++){
-        if (i == 0){
-            timeStamp = timeArr[i];
-        }
-        else {
-            timeStamp += "-" + timeArr[i];
-        }
-    }
+    // for (let i = 0; i < 5; i++){
+    //     if (i == 0){
+    //         timeStamp = timeArr[i];
+    //     }
+    //     else {
+    //         timeStamp += "-" + timeArr[i];
+    //     }
+    // }
 
-    docName = userID + subject + timeStamp;
+    timeStamp = timeArr[1] + " " + timeArr[2] + ", " + timeArr[3] + " " + timeArr[4];
+
+    docName = userID + timeStamp + subject;
 
     //get the data that's uploaded in input="file" area
     const ref = firebase.storage().ref();
@@ -84,6 +86,7 @@ function submit() {
                 Description: description,
                 StorageURL: fileURL,
                 docName: docName,
+                Time: timeStamp,
                 StoragePath: name
             })
         })
