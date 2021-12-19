@@ -55,7 +55,7 @@
                                 <div class="card-block text-center text-white">
                                     <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png"
                                             class="img-radius" alt="User-Profile-Image"> </div>
-                                    <p>Name</p> <i
+                                    <p id="name">Name</p> <i
                                         class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                 </div>
                             </div>
@@ -69,19 +69,54 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">City</p>
-                                            <h6 class="text-muted f-w-400"><span id="city">city-here</span>, <span class="post-code">postcode</span></h6>
+                                            <h6 class="text-muted f-w-400"><span id="city">city-here</span>, <span
+                                                    id="post-code">postcode</span></h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-8">
                                 <div class="card-block">
-                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">🍬 Kandy <span id="kandy-here">1</span></h6>
+                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">🍬 Kandy <span id="kandy">1</span></h6>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-secondary btn-sm" id="edit-btn">edit</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="edit-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalForm">edit</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="modal-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" id="modal-city" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Postal code</label>
+                            <input type="text" class="form-control" id="modal-post-code" />
+                        </div>
+                        <div class="modal-footer d-block">
+                            <button type="button" class="btn btn-primary float-end" id="save-btn">save</button>
+                            <button type="submit" class="btn btn-secondary float-end"
+                                data-bs-dismiss="modal">close</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -105,6 +140,11 @@
             <span class="bottomtitle">Profile</span>
         </a>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/scripts/profile.js"></script>
 </body>
 
 </html>
