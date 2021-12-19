@@ -17,14 +17,8 @@
 
 }
 
-/* .main > a:nth-child(2n) > div{
-    background-color: #609083;
-    color: white;
-} */
-
 .main > a:nth-child(2n-1) > div{
     background-color: #ced073;
-    /* color: white; */
 }
 
 .listingImg {
