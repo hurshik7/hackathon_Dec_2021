@@ -65,7 +65,7 @@ Firebase hosting files:
 ```
 
 ## Resources
-- Symmetry logo from Tailor Brands(Open Source: https://studio.tailorbrands.com/)
+- adoptoy logo from Tailor Brands(Open Source: https://studio.tailorbrands.com/)
 
 ## Contact
 * Sehyun Park - sehyun.kelly.park@gmail.com
